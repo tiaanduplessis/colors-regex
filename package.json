@@ -1,0 +1,41 @@
+{
+  "name": "colors-regex",
+  "version": "1.0.0",
+  "description": "Regular expressions for rgb, rgba, hex, hexa, hsl &amp; hsla colors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiaanduplessis/colors-regex.git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/colors-regex",
+  "bugs": "https://github.com/tiaanduplessis/colors-regex/issues",
+  "author": {
+    "name": "Tiaan",
+    "email": "tiaanduplessis@hotmail.com",
+    "url": "tiaanduplessis.co.za"
+  },
+  "scripts": {
+    "lint": "standard --verbose | snazzy",
+    "lint:fix": "standard --fix --verbose | snazzy",
+    "test": "npm run lint:fix && mocha"
+  },
+  "keywords": [
+    "regexp,",
+    "rgb,",
+    "rgba,",
+    "hex,",
+    "hexa,",
+    "hsl,",
+    "hsla",
+    "colors-regex"
+  ],
+  "dependencies": {
+    "deep-freeze-node": "^1.1.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "snazzy": "^5.0.0",
+    "standard": "^8.6.0"
+  }
+}
