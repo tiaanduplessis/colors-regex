@@ -1,7 +1,10 @@
+
 # colors-regex
-[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-[![Build Status](https://travis-ci.org/tiaanduplessis/colors-regex.svg?branch=master)](https://travis-ci.org/tiaanduplessis/colors-regex)
+[![package version](https://img.shields.io/npm/v/colors-regex.svg?style=flat-square)](https://npmjs.org/package/colors-regex)
+[![package downloads](https://img.shields.io/npm/dm/colors-regex.svg?style=flat-square)](https://npmjs.org/package/colors-regex)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![package license](https://img.shields.io/npm/l/colors-regex.svg?style=flat-square)](https://npmjs.org/package/colors-regex)
+[![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 > Regular expressions for rgb, rgba, hex, hexa, hsl &amp; hsla colors
 
@@ -9,18 +12,16 @@
 
 - [Install](#install)
 - [Usage](#usage)
-- [API](#api)
 - [Contribute](#contribute)
-- [License](#license)
-
+- [License](#License)
 
 ## Install
 
-```sh
-$ npm install --save colors-regex
-```
+This project uses [node](https://nodejs.org) and [npm](https://www.npmjs.com). 
 
 ```sh
+$ npm install colors-regex
+$ # OR
 $ yarn add colors-regex
 ```
 
@@ -28,47 +29,21 @@ $ yarn add colors-regex
 
 ```js
 const assert = require('assert')
-const colorsRegex = require('colors-regex');
+const colorRegex = require('colors-regex')
 
 assert(colorRegex.hex.strict.test('#000000')) // Success
 assert(colorRegex.hex.strict.test('#2')) // Failure
 
 ```
 
-## API
-The module exports a single object with the different color types as properties. Each color type has a strict & global regex.
-```js
-const colorRegex = require('./index')
-console.log(colorRegex)
-// { hex:
-//    { strict: ...
-//      global: ...},
-//   hexa:
-//    { strict: ...,
-//      global: ... },
-//   rgb:
-//    { strict: ...,
-//      global: ... },
-//   rgba:
-//    { strict: ...,
-//      global: ... },
-//   hsl:
-//    { strict: ...,
-//      global: ...},
-//   hsla:
-//    { strict: ...,
-//      global: ... } }
-
-```
-
-
-
 ## Contribute
 
-Contributions are welcome. Please open up an issue or create PR if you would like to help out.
-
-Note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+1. Fork it and create your feature branch: git checkout -b my-new-feature
+2. Commit your changes: git commit -am 'Add some feature'
+3. Push to the branch: git push origin my-new-feature 
+4. Submit a pull request
 
 ## License
 
-Created with ♥ by [Tiaan](http://tiaanduplessis.co.za). Licensed under the MIT License.
+MIT
+    

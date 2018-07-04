@@ -9,15 +9,10 @@
   },
   "homepage": "https://github.com/tiaanduplessis/colors-regex",
   "bugs": "https://github.com/tiaanduplessis/colors-regex/issues",
-  "author": {
-    "name": "Tiaan",
-    "email": "tiaanduplessis@hotmail.com",
-    "url": "tiaanduplessis.co.za"
-  },
+  "author": "Tiaan du Plessis",
   "scripts": {
-    "lint": "standard --verbose | snazzy",
-    "lint:fix": "standard --fix --verbose | snazzy",
-    "test": "npm run lint:fix && mocha"
+    "lint": "standard --fix",
+    "test": "npm run lint && mocha"
   },
   "keywords": [
     "regexp,",
@@ -29,13 +24,9 @@
     "hsla",
     "colors-regex"
   ],
-  "dependencies": {
-    "deep-freeze-node": "^1.1.2"
-  },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0",
-    "snazzy": "^5.0.0",
-    "standard": "^8.6.0"
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "standard": "11.0.1"
   }
 }

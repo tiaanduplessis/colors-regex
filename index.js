@@ -1,8 +1,6 @@
 'use strict'
 
-const deepFreeze = require('deep-freeze-node')
-
-module.exports = deepFreeze({
+module.exports = {
   hex: {
     strict: /^#([a-f0-9]{6}|[a-f0-9]{3})\b$/,
     global: /#([a-f0-9]{6}|[a-f0-9]{3})\b/gi
@@ -27,4 +25,4 @@ module.exports = deepFreeze({
     strict: /^hsla\((\d+),\s*([\d.]+)%,\s*([\d.]+)%,\s*(\d*(?:\.\d+)?)\)$/,
     global: /hsla\((\d+),\s*([\d.]+)%,\s*([\d.]+)%,\s*(\d*(?:\.\d+)?)\)/gi
   }
-})
+}
